@@ -46,7 +46,7 @@ class Game {
         ];
         const an1 = ['Cologne', '100°C', 'Nile', 'Himalaya', '60'];
         const an2 = ['Frankfurt', '120°C', 'Amazon', 'K2', '100'];
-        const an3 = ['Munich', '112°F', 'Mekong', 'Mount Everest', '120'];
+        const an3 = ['Munich', '112°Fg', 'Mekong', 'Mount Everest', '120'];
         const an4 = ['Berlin', '100K', 'Congo', 'Makalu', '124'];
         this.texts.question.innerHTML = questions[i];
         this.texts.answerOne.innerHTML = an1[i];
@@ -105,7 +105,7 @@ class Game {
     }
 
     gameLost() {
-        swal('Incorret!', 'You are the best!', 'error').then(() => {
+        swal('Incorret!', 'Good luck next time!', 'error').then(() => {
             this.restart();
         });
     }
