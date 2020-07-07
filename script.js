@@ -99,7 +99,7 @@ class Game {
     }
 
     gameWin() {
-        swal('Winer!', 'You did a greate job!', 'success').then(() => {
+        swal('Winer!', 'You did a great job!', 'success').then(() => {
             this.restart();
         });
     }
