@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+        <title>Quiz time!</title>
+    </head>
+    <body>
+        <div class="welcome">
+            <h1>Welcome to Quiz App!</h1>
+            <button id="startBtn" class="startBtn" onclick="startGame()">
+                Start game!
+            </button>
+        </div>
+        <div>
+            <h1 id="question" class="question">
+                Press start to begin
+            </h1>
+        </div>
+        <div class="answercontainer">
+            <div class="firstrow">
+                <button
+                    id="answerOne"
+                    class="answerbutton"
+                    data-num="1"
+                ></button>
+                <button
+                    id="answerTwo"
+                    class="answerbutton"
+                    data-num="2"
+                ></button>
+            </div>
+            <div class="secondrow">
+                <button
+                    id="answerThree"
+                    class="answerbutton"
+                    data-num="3"
+                ></button>
+                <button
+                    id="answerFour"
+                    class="answerbutton"
+                    data-num="4"
+                ></button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
